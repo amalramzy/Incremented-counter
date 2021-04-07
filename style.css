@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+box-sizing: border-box; /*لا ياثر علي مساحة الديف عند اضافة (padding or border)*/ 
+}
+
+body {
+background-color: #8e44ad;
+color: #fff;
+font-family: 'Roboto Mono', sans-serif;
+display: flex; /* الديفات تتحط جنب بعض بدل من تحت بعض*/
+align-items: center;/*توسيط عرضي في النص ناحية left */
+justify-content: center;/* توسيط عرضي في النص ناحية top */
+height: 100vh;
+overflow: hidden;/*لاخفاء اي حاجة تخرج برة المساحة اللي انا محددها*/
+margin: 0;
+}
+
+.counter-container{
+    display: flex;/* الديفات تتحط جنب بعض بدل من تحت بعض*/
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+}
+.counter{
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+@media (max-width: 700px){
+    body{
+        flex-direction: column;
+    }
+}
+
